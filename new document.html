@@ -1,0 +1,46 @@
+<head>
+
+
+    <title>NEW DOCUMENT</title>
+</head>
+<body>
+
+<form action="/api/login" method="POST">
+  <div>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" placeholder="Enter username" required>
+  </div>
+  
+  <divss>
+    <label for="pwd">Password:</label>
+    <input type="password" id="pwd" name="password" required>
+  </div>
+
+  <button type="submit">Log In</button>
+</form>
+
+
+<br><br><br>
+
+
+    
+
+<form action="/search" method="GET">
+  <label for="site-search">Search the site:</label>
+  <input type="search" id="site-search" name="q" placeholder="Type here...">
+  <button type="submit">Search</button>
+</form>
+  <br><br><br>
+
+  <!-- enctype mandatory for transmitting files safely -->
+<form action="/upload-profile" method="POST" enctype="multipart/form-data">
+  <div>
+    <label for="user-avatar">Choose a profile picture:</label>
+    <input type="file" id="user-avatar" name="avatar" accept="image/png, image/jpeg">
+  </div>
+  
+  <button type="submit">Upload Photo</button>
+</form>
+
+    
+</body>
